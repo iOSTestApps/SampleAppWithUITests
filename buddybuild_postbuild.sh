@@ -6,6 +6,7 @@ DERIVED_DATA=$PWD/runner-app-dd
 xcodebuild build-for-testing \
     -scheme SampleAppWithUITests \
     -derivedDataPath "$DERIVED_DATA" \
+    -quiet \
     -configuration Release
 
 echo "Looking for Runner app and showing architecture"
